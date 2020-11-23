@@ -119,7 +119,7 @@ let main = {
     main.playbar.value=parseInt(main.audio.currentTime);
  }, 1000);
 
- // Previous control button evenlistener 
+ // Previous control button eventlistener 
  main.prevControl.addEventListener("click", function() {
     currentSongIndex--;
     if(currentSongIndex < 0) {
@@ -128,7 +128,7 @@ let main = {
     loadSong(currentSongIndex);
  });
 
- // Next control button evenlistener 
+ // Next control button eventlistener 
  main.nextControl.addEventListener("click", function() {
     currentSongIndex = (currentSongIndex+1) % songList.length;
     loadSong(currentSongIndex);
