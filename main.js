@@ -134,7 +134,7 @@ let main = {
     loadSong(currentSongIndex);
  });
 
- // Play pause button function evenlistener that change from play to paused if clicked
+ // Play pause button function eventlistener that change from play to paused if clicked
  main.playPauseControl.addEventListener("click", function() {
     if(main.audio.paused) {
         main.playPauseControl.classList.remove("paused");
